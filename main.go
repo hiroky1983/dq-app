@@ -23,6 +23,7 @@ func main() {
 				KeyType: aws.String("HASH"),
 			},
 		},
+		BillingMode: aws.String("PAY_PER_REQUEST"),
 	}
 	resp, err := ddb.CreateTable(prams)
 	if err != nil {
